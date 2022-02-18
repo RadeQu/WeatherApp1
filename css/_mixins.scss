@@ -1,0 +1,15 @@
+@mixin flex($direction, $align, $justify){
+    display: flex;
+    flex-direction: $direction;
+    align-items: $align;
+    justify-content: $justify;
+}
+@mixin gradientBG($deg,$colorPrim, $colorF, $colorS, $colorT){
+    background: $colorPrim;
+    background: linear-gradient($deg, $colorF,  $colorS,  $colorT);
+    backdrop-filter: blur(4px) saturate(100%);
+    border-radius: 8px;
+    border: 2px solid rgba(255, 255, 255, 0.507);
+    
+
+}

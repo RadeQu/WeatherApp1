@@ -1,0 +1,33 @@
+body{
+    background-image: url(../images/flatten.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.wrapper{
+    width: 100%;
+    height: 100%;
+    @include flex(row, center, center);
+    .card{
+        @include gradientBG(45deg,$DarkBlue, $DarkBlue, $PrimaryBlue, $LightBlue);
+        width: 500px;
+        height: auto;
+        color: rgb(159, 243, 3);
+        padding: 15px;
+        line-height: 35px;
+        }
+        h1{
+            align-self: center;
+        }
+        .wind {
+        @include flex(null, null, null);
+            i{
+            padding-left: 15px;
+             }
+        }
+        
+        .myIcon{
+        font-size: 40px;
+        }
+};
