@@ -19,14 +19,24 @@
         <div class="card">
             <h1>POGODA</h1>
             <h2 id="CityName"></h2>
-            <div class="temperature"><h2 id="Temperature"></h2><i id="TempIcon" class="myIcon"></i></div>
-            <div class="clouds"><h2 id="Cloudy"></h2></div>
-          <div class="wind"><h2 id="Wind"></h2><i id="iconWind" class="myIcon"></i></div> 
-          <input id="CitySearch" type="text" placeholder="Wybierz miasto">
-          <button id="MyCity">Moja Lokalizacja</button>
-          <p id="Error"></p>
+            <div class="temperature">
+                <h2 id="Temperature"></h2><i id="TempIcon" class="myIcon"></i>
+            </div>
+            <div class="clouds">
+                <h2 id="Cloudy"></h2>
+            </div>
+            <div class="wind">
+                <h2 id="Wind"></h2><i id="iconWind" class="myIcon"></i>
+            </div>
+            
+            <div class="search">
+            <input id="CitySearch"  type="text" placeholder="  Wybierz miasto">
+            <button for="CitySearch" class="searchSec">Sprawdź</button>
+            <button id="MyCity" class="searchSec">Moja Lokalizacja</button>
         </div>
-      
+        <p id="Error"></p>
+        </div>
+
     </main>
     <script src="./script.js"></script>
 </body>

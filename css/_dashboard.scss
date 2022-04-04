@@ -11,17 +11,20 @@ body{
     @include flex(row, center, center);
     .card{
         @include gradientBG(45deg,$DarkBlue, $DarkBlue, $PrimaryBlue, $LightBlue);
-        width: 500px;
-        height: auto;
+        width: 30%;
+        height: 35%;
         color: rgb(159, 243, 3);
         padding: 15px;
         line-height: 35px;
         }
         h1{
-            align-self: center;
+            text-align: center;
+        }
+        .temperature{
+            display: flex;
         }
         .wind {
-        @include flex(null, null, null);
+        display: flex;
             i{
             padding-left: 15px;
              }
@@ -29,5 +32,26 @@ body{
         
         .myIcon{
         font-size: 40px;
+        }
+        .search{
+            margin-top: 15%;
+            @include flex (row, center, center);
+            .searchSec{
+                margin: 0 2%;
+                line-height: 25px;
+                transition: all 0.5s ease-in;
+                border: hidden;
+                border-radius: 15px;
+                width: 25%;
+                color: rgb(9, 49, 19);
+            }
+            .searchSec:hover
+            {
+               cursor: pointer;
+               background-color: rgba(255, 255, 0, 0.85);
+               color: rgb(0, 38, 255);
+               text-shadow: 1px 4px 6px rgba(66, 68, 90, 1);
+
+            }
         }
 };
